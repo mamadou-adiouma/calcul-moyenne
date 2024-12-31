@@ -1,0 +1,102 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     border: 0;
+     outline: none;
+     font-family: verdana;
+}
+
+body{
+     display: grid;
+     place-items: center;
+     min-height: 100dvh;
+     background-color: #8a4af3;
+     color: #02020c;
+}
+
+section{
+     width: 100%;
+     display: grid;
+     place-items: center;
+     row-gap: 18px;
+     padding: 10px;
+}
+
+.input_box{
+     display: flex;
+     align-items: center;
+     column-gap: 20px;
+     background-color: #fff;
+     padding: 12px;
+     border-radius: 5px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     min-width: 320px;
+     width: 95%;
+     margin-inline: 5%;
+     height: 80px;
+}
+
+#moy_input, #calc_btn, .note_box, #id_moy_L{
+     padding: 10px;
+     border-radius: 5px;
+}
+
+#moy_input{
+     width: 100%;
+     font-size: 17px;
+     font-weight: 500;
+}
+
+#moy_input, .note_box, #id_moy_L{
+     background-color: #efeefe;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.note_box{
+     text-align: center;
+}
+
+.note_box h4{
+     margin-top: 5px;
+     text-decoration: 2px underline;
+}
+
+.sub_moy{
+     color: crimson;
+}
+
+.moy{
+     color: green;
+}
+
+#calc_btn {
+     background-color: #7e56f4;
+     color: #fff;
+     font-weight: 500;
+     font-size: 18px;
+     cursor: pointer;
+}
+
+article{
+     margin-block: 25px;
+     display: grid;
+     grid-template-columns: repeat(6, 80px);
+     gap: 20px;
+}
+
+.good_luck{
+     background-color: rgb(0, 148, 0);
+     color: whitesmoke;
+     margin-top: 30px;
+     padding: 12px;
+     border-radius: 5px;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     width: 600px;
+     text-align: center;
+     display: none;
+}
+
+.good_luck.active{
+     display: block !important;
+}
