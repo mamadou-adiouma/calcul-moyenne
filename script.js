@@ -1,4 +1,12 @@
 "use strict"
+const block_access = (e) => {
+     if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 74) || (e.ctrlKey && e.keyCode == 85)) {
+          e.preventDefault()
+          alert("Interdit ! 😁")
+          window.location = "https://github.com/"
+     }
+}
+
 const input = document.getElementById("input")
 const calc_btn = document.getElementById("calc_btn")
 const mssgErr = document.getElementById("display_err")
@@ -91,10 +99,20 @@ const reset = () => {
 }
 
 calc_btn.addEventListener('click', verification)
+
 document.addEventListener("keydown", (e) => {
      if (e.key === "Enter") {
           verification()
      }
 })
+
+window.addEventListener("keydown", block_access)
+
+document.addEventListener("contextmenu", (e) => {
+     e.preventDefault()
+     alert("Interdit 😁!")
+     window.location = "https://github.com/"
+})
+
 document.addEventListener("DOMContentLoaded", clear_and_focus)
 input.addEventListener("keydown", reset)
