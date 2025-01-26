@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
+
 <head>
      <meta charset="UTF-8">
+     <link rel="shorcut icon" href="./icons/fav-icon.png" sizes="144x144">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Calcul Moyenne - Licence.</title>
-     <link rel="shorcut icon" href="./icons/fav-icon.png">
+     <meta property="og:title" content="Calculer rapidement et facilement sa moyenne de générale">
+     <meta property="og:image" content="https://omgsymbol.com/smirk-emojis/">
+     <meta name="description"
+          content="calcul moyenne generale de licence (Semestres 1, 2, 3, 4, 5, 6). 100% rapide et fiable">
+     <meta name="keywords" content="Calcul, Moyenne Generale, moyenne, notes, licence, semestre">
+     <title>Calcul Moyenne - Licence - App</title>
      <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-     <section>
-          <div class="input_box">
-               <input type="text" id="moy_input" placeholder="Moyennes 6 semestres - dans l'ordre: 17.33,16,20.00,16,17.5,18">
-               <button id="calc_btn" type="button">Calculer</button>
-          </div>
+     <header>
+          <h1 role="title" class="title">Calcul de Moyenne Générale de licence : moyennes des 6 semestres </h1>
+     </header>
 
-          <article></article>
+     <main>
+          <section role="banner">
+               <div class="input_box">
+                    <input name="notes" type="text" id="input"
+                         placeholder="Moyennes au format: 16, 08.33, 20, 15, 17.5, 9.99" required>
+                    <button id="calc_btn" type="button" role="button" title="CALCULER">Calculer</button>
+               </div>
+          </section>
+          <aside></aside>
+     </main>
 
-          <h3 id="id_moy_L">MOYENNE GENERALE : <span id="moy_gen">---</span></h3>
-          <h3 class="good_luck">BONNE CHANCE ! </h3>
-     </section>
+     <footer>
+          <p class="copyright" role="complementary">&copy; ADIOU KANE DEC. 2024</p>
+          <span id="display_err" role="alertdialog"></span>
+     </footer>
 
-
-     <p>&copy; adiou kane Déc. 2024</p>
      <script src="script.js"></script>
 </body>
+
 </html>
