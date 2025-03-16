@@ -2,7 +2,6 @@
 const block_access = (e) => {
      if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 74) || (e.ctrlKey && e.keyCode == 85)) {
           e.preventDefault()
-          alert("Interdit ! 😁")
           window.location = "https://github.com/"
      }
 }
@@ -110,7 +109,6 @@ window.addEventListener("keydown", block_access)
 
 document.addEventListener("contextmenu", (e) => {
      e.preventDefault()
-     alert("Interdit 😁!")
      window.location = "https://github.com/"
 })
 
